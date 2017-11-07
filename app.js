@@ -26,7 +26,6 @@ io.on('connection', function(socket){
     io.emit('receive message', msg);
   });
 });
-Users = mongoose.model("users",UsersSchema);
 http.listen(3000, function(){
   console.log('Server on Port 3000');
 });
